@@ -4,7 +4,7 @@
   <a href="https://arxiv.org/abs/2503.07499">
     <img src="https://img.shields.io/badge/ArXiv-2503.07499-b31b1b?style=for-the-badge&logo=arxiv" alt="ArXiv">
   </a>
-  <a href="YOUR_DOWNLOAD_LINK_HERE">
+  <a href="https://github.com/calvinyeungck/AthletePose3D/tree/main/license">
     <img src="https://img.shields.io/badge/Download-AthletePose3D-blue?style=for-the-badge&logo=databricks" alt="Download">
   </a>
 </p>
@@ -70,7 +70,7 @@
 
 
 ## ⬇️ Download AthletePose3D
-The dataset is available for download at the following link: [Download AthletePose3D](YOUR_DOWNLOAD_LINK_HERE)
+The dataset is available for download at the following link: [Download AthletePose3D](https://github.com/calvinyeungck/AthletePose3D/tree/main/license)
 
 ## Reference
 Please consider citing our work if you find it helpful to yours:
@@ -88,4 +88,4 @@ Please consider citing our work if you find it helpful to yours:
 ```
 
 ## 📄 License
-For non-commercial and scientific research purposes only. For details refer to [LICENSE]()
+For non-commercial and scientific research purposes only. For details refer to [LICENSE](https://github.com/calvinyeungck/AthletePose3D/tree/main/license)
