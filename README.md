@@ -86,3 +86,6 @@ Please consider citing our work if you find it helpful to yours:
       url={https://arxiv.org/abs/2503.07499}, 
 }
 ```
+
+## 📄 License
+For non-commercial and scientific research purposes only. For details refer to [LICENSE]()
