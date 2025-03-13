@@ -35,7 +35,7 @@
 - Advancing **pose estimation in high-performance environments**  
 
 ## 💡 Example 
-<div><video controls src="https://github.com/user-attachments/assets/a6252b90-6b57-4a20-bf11-e4788e8bae60" muted="true"></video></div>
+<div><video controls src="https://github.com/user-attachments/assets/9edba639-e0ab-4c01-affc-d44c3ddfb385" muted="false"></video></div>
 
 ## 📂 Dataset Structure
 
