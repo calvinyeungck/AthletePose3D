@@ -37,8 +37,6 @@
 ## 💡 Example 
 <div><video controls src="https://github.com/user-attachments/assets/a6252b90-6b57-4a20-bf11-e4788e8bae60" muted="true"></video></div>
 
-
-
 ## 📂 Dataset Structure
 
 - `/AthletePose3D/`
