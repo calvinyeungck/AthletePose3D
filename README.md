@@ -35,9 +35,7 @@
 - Advancing **pose estimation in high-performance environments**  
 
 ## 💡 Example 
-<div><video controls src="<!---video URL--->" muted="false"></video></div>
-
-https://github.com/user-attachments/assets/a6252b90-6b57-4a20-bf11-e4788e8bae60
+<div><video controls src="https://github.com/user-attachments/assets/a6252b90-6b57-4a20-bf11-e4788e8bae60" muted="true"></video></div>
 
 
 
