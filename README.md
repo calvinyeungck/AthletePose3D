@@ -35,7 +35,12 @@
 - Advancing **pose estimation in high-performance environments**  
 
 ## 💡 Example 
-<div><video controls src="https://github.com/calvinyeungck/AthletePose3D/blob/main/fig/example.avi" muted="true"></video></div>
+<div>
+  <video controls muted>
+    <source src="https://github.com/calvinyeungck/AthletePose3D/raw/refs/heads/main/fig/example.avi" type="video/avi">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ## 📂 Dataset Structure
 
