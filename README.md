@@ -35,6 +35,7 @@
 - Advancing **pose estimation in high-performance environments**  
 
 ## 💡 Example 
+<div><video controls src="<!https://github.com/calvinyeungck/AthletePose3D/blob/main/fig/example.avi>" muted="false"></video></div>
 
 ## 📂 Dataset Structure
 
