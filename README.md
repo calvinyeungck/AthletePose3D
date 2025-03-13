@@ -72,7 +72,7 @@
 ## ⬇️ Download AthletePose3D
 The dataset is available for download at the following link: [Download AthletePose3D](https://github.com/calvinyeungck/AthletePose3D/tree/main/license)
 
-## Reference
+## 📖 Reference
 Please consider citing our work if you find it helpful to yours:
 
 ```
