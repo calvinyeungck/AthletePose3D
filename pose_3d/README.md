@@ -8,7 +8,7 @@ Before training, you can generate and convert the dataset using the following co
 
 ```bash
 python gendb.py
-python convert.py
+python convert_ap3d.py
 ```
 ## Updating the Data Reader
 To use the AthletePose3D dataset, update the DataReaderH36M class in the data reader, example with [TCPFormer](https://github.com/AsukaCamellia/TCPFormer):
