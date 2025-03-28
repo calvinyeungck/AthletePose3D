@@ -1,4 +1,4 @@
-# 🏃 AthletePose3D: A Benchmark Dataset for 3D Human Pose Estimation and Kinematic Validation in Athletic Movements
+# 🏃 AthletePose3D: A Benchmark Dataset for 3D Human Pose Estimation and Kinematic Validation in Athletic Movements (CVSports at CVPR 2025)
 
 <p align="center">
   <a href="https://arxiv.org/abs/2503.07499">
