@@ -1,5 +1,10 @@
 # AthletePose3D Dataset
 
+> [!IMPORTANT]
+> The download link is provided at the bottom of the page.
+> Please read the license agreement carefully before proceeding.
+> By downloading the files, you acknowledge and agree to the terms of the license.
+
 ## 1. Data License
 **For non-commercial and scientific research purposes only.**
 
@@ -34,4 +39,4 @@ If you use this dataset, you agree to cite the corresponding paper:
 }
 ```
 ## Download AthletePose3D
-By downloading the Data, you agree to the license terms. [Download AthletePose3D](https://drive.google.com/drive/folders/10YnMJAluiscnLkrdiluIeehNetdry5Ft?usp=sharing)
+By downloading the files, you agree to the license terms. [Download AthletePose3D](https://drive.google.com/drive/folders/10YnMJAluiscnLkrdiluIeehNetdry5Ft?usp=sharing)
