@@ -38,5 +38,5 @@ If you use this dataset, you agree to cite the corresponding paper:
       url={https://arxiv.org/abs/2503.07499}, 
 }
 ```
-## Download AthletePose3D and models checkpoint
+## Download AthletePose3D and Models Checkpoint
 By downloading the files, you agree to the license terms. [Download AthletePose3D](https://drive.google.com/drive/folders/10YnMJAluiscnLkrdiluIeehNetdry5Ft?usp=sharing)
