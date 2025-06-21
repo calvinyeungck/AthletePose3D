@@ -201,8 +201,8 @@ class DataReaderH36M(object):
             new_dataset[key]['source'].append(dict_i['videoid'])
             new_dataset[key]['video_w'].append(dict_i['video_width'])
             new_dataset[key]['video_h'].append(dict_i['video_height'])
-            new_dataset[key]['2.5d_factor'].append(dict_i['ratio'])
-            new_dataset[key]['joints_2.5d_image'].append(np.array(dict_i['joint_3d_image']) * dict_i['ratio'])
+            new_dataset[key]['2.5d_factor'].append(1/dict_i['ratio'])
+            new_dataset[key]['joints_2.5d_image'].append(np.array(dict_i['joint_3d_image'])/ dict_i['ratio'])
             new_dataset[key]['action'].append(dict_i['action'])
         return new_dataset
 
