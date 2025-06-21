@@ -101,6 +101,10 @@ def camera_to_image_frame(pose3d, box, camera, rootIdx, meta):
         pose3d.copy(), camera['fx'], camera['fy'], camera['cx'], camera['cy'])
     pose3d_depth = ratio * (pose3d[:, 2] - pose3d[rootIdx, 2])
     pose3d_image_frame[:, 2] = pose3d_depth
+    # if meta['rotation'] == True then the image is rotated 90 degrees
+    if meta['rotation']:
+        pose3d_image_frame[:, 0] = meta['height'] - pose3d_image_frame[:, 1]
+        pose3d_image_frame[:, 1] = pose3d_image_frame[:, 0]
     return pose3d_image_frame
 
 
