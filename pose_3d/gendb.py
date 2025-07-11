@@ -60,6 +60,12 @@ def load_db(dataset_root_dir, dset, vid, cams, rootIdx=0):
 
         box = _infer_box(joint_3d_cam, cam, rootIdx, meta)
         joint_3d_image = camera_to_image_frame(joint_3d_cam, box, cam, rootIdx, meta)
+        if meta['rotation']:
+            video_width = meta['height']
+            video_height = meta['width']
+        else:
+            video_width = meta['width']
+            video_height = meta['height']
         center = (0.5 * (box[0] + box[2]), 0.5 * (box[1] + box[3]))
         scale = ((abs(box[2] - box[0])) / 200.0, (abs(box[3] - box[1])) / 200.0)
         ratio = (abs(box[2] - box[0]) + 1) / 2000.0 # 2000 is the rectangle size
@@ -77,8 +83,8 @@ def load_db(dataset_root_dir, dset, vid, cams, rootIdx=0):
             'action': meta['action'],
             'subaction': meta['subaction'],
             'root_depth': joint_3d_cam[rootIdx, 2],
-            'video_width': meta['width'],
-            'video_height': meta['height'],
+            'video_width': video_width,
+            'video_height': video_height,
             'rotation': meta['rotation'],
             'fps': meta['fps'],
         }
@@ -103,8 +109,15 @@ def camera_to_image_frame(pose3d, box, camera, rootIdx, meta):
     pose3d_image_frame[:, 2] = pose3d_depth
     # if meta['rotation'] == True then the image is rotated 90 degrees
     if meta['rotation']:
-        pose3d_image_frame[:, 0] = meta['height'] - pose3d_image_frame[:, 1]
+        # Flip Y and store the flipped value
+        flipped_y = meta['height'] - pose3d_image_frame[:, 1]
+
+        # Swap coordinates
         pose3d_image_frame[:, 1] = pose3d_image_frame[:, 0]
+        pose3d_image_frame[:, 0] = flipped_y
+        pose3d_image_frame[:, 1] = meta['width']/2 - (pose3d_image_frame[:, 1] - meta['width']/2)
+        pose3d_image_frame[:, 0] = meta['height']/2 - (pose3d_image_frame[:, 0] - meta['height']/2)
+        
     return pose3d_image_frame
 
 
@@ -140,6 +153,13 @@ def _infer_box(pose3d, camera, rootIdx, meta):
     if meta['rotation']:
         tl2d = [meta['height'] - tl2d[1], tl2d[0]]
         br2d = [meta['height'] - br2d[1], br2d[0]]
+        #rotate the coordinates
+        tl2d[0] = meta['height']/2 - (tl2d[0] - meta['height']/2)
+        tl2d[1] = meta['width']/2 - (tl2d[1] - meta['width']/2)
+        br2d[0] = meta['height']/2 - (br2d[0] - meta['height']/2)
+        br2d[1] = meta['width']/2 - (br2d[1] - meta['width']/2)
+        #swap tl2d and br2d
+        tl2d, br2d = br2d, tl2d
     return np.array([tl2d[0], tl2d[1], br2d[0], br2d[1]])
 
 
