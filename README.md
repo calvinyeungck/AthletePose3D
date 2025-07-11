@@ -13,7 +13,9 @@
 ## 📌 Overview  
 **AthletePose3D** (AP3D) is a novel dataset for **monocular 3D human pose estimation** in **sports biomechanics**, designed to capture **high-speed, high-acceleration movements**. Alongside the raw dataset, we also provide a **training-ready version** prepared for **2D and 3D pose estimation modeling**, including both preprocessed annotations and AP3D fine-tuned model parameters.
 
-> **⚠️ Important Note:** 21/6/2025 — The `pose_3d.zip` files and code have been corrected. Please re-download them. Thank you.
+> **⚠️ Important Notes:**  
+> **11/07/2025 – Erratum:** A preprocessing mistake occurred in one camera angle of the running motions (3D). The `pose_3d.zip` files and corresponding code have been corrected — please re-download them. For the updated results, please refer to arXiv paper v2. The conclusions of the experiment and the overall paper remain unchanged.  
+> **21/06/2025 – Update:** The `pose_3d.zip` files and code have been corrected. Please re-download them. Thank you.
 
 **To download the dataset or fine-tuned checkpoints, please read the [license agreement](https://github.com/calvinyeungck/AthletePose3D/tree/main/license).**
 
